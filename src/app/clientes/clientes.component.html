@@ -1,0 +1,19 @@
+<body>
+  <div class="form">
+    <h2>Registro Clientes</h2>
+    <form [formGroup]="loginForm">
+      <div>
+        <p>Identificación</p>
+        <input type="text" formControlName="identificacion" name="identificacion" id="identificacion">
+        <p>Nombre</p>
+        <input type="text" formControlName="nombre" name="nombre" id="nombre">
+        <p>Apellido</p>
+        <input type="text" formControlName="apellido" name="apellidos" id="apellidos">
+        <p>Dirección</p>
+        <input type="text" formControlName="direccion" name="apellidos" id="apellidos">
+        <button class="btn" (click)="send()" [disabled]="!loginForm.valid">Enviar</button>
+        <a href="#">Volver</a>
+      </div>
+    </form>
+  </div>
+</body>
